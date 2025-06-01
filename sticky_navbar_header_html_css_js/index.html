@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/scc2?family+Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/c4522a710f.js" crossorigin="anonymous"></script>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                font-family: 'poppins', sans-serif;
+            }
+
+            .header {
+                width: 100%;
+                height: 6rem;
+                display: flex;
+                align-items: center;
+            }
+
+            .logo {
+                text-decoration: none;
+                font-size: 40px;
+                font-weight: 700;
+                margin-left: 30px;
+                color: blueviolet;
+            }
+
+            .search {
+                height: 40px;
+                border: 1px solid #ccc;
+                border-radius: 3rem;
+                width: 45%;
+                margin-left: 20%;
+                padding-left: 22px;
+            }
+
+            .button {
+                border: 0px;
+                background-color: transparent;
+                color: blueviolet;
+                margin-left: -40px;
+                font-size: 18px;
+            }
+
+            .button:hover {
+                color: #333333;
+            }
+
+            .navbar {
+                width: 100%;
+                display: flex;
+                height: 3rem;
+                background-color: blueviolet;
+                align-items: center;
+                padding-left: 30px;
+            }
+
+            .navbar li {
+                list-style: none;
+                display: inline-block;
+                padding-right: 20px;
+                position: relative;
+                align-items: center;
+            }
+
+            .navbar li a {
+                color: #ffffff;
+                text-decoration: none;
+                font-size: 20px;
+            }
+
+            .navbar li a:hover {
+                color: #333;
+            }
+
+            p {
+                font-size: 20px;
+                padding: 30px;
+            }
+
+            .sticky {
+                position: fixed;
+                top: 0;
+                width: 100%;
+            }
+
+            .sticky+ .content {
+                padding-top: 45px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <nav class="header" id="header">
+            <a href="#" class="logo">LOGO</a>
+            <input class="search" placeholder="Search...">
+            <button class="button" type="submit"><i class="fas fa-search"></i></button>
+        </nav>
+
+        <nav class="navbar" id="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </nav>
+
+        <div>
+            <p>As you scroll down. Navbar will remain on screen.
+The sticky header remains on the screen. Depending on the design, it becomes more compact when you scroll down. Without having to scroll back to the top, it allows the user to navigate quickly to other pages.</p>
+            <p>As you scroll down. Navbar will remain on screen.
+The sticky header remains on the screen. Depending on the design, it becomes more compact when you scroll down. Without having to scroll back to the top, it allows the user to navigate quickly to other pages.</p>
+            <p>As you scroll down. Navbar will remain on screen.
+The sticky header remains on the screen. Depending on the design, it becomes more compact when you scroll down. Without having to scroll back to the top, it allows the user to navigate quickly to other pages.</p>
+            <p>As you scroll down. Navbar will remain on screen.
+The sticky header remains on the screen. Depending on the design, it becomes more compact when you scroll down. Without having to scroll back to the top, it allows the user to navigate quickly to other pages.</p>
+            <p>As you scroll down. Navbar will remain on screen.
+The sticky header remains on the screen. Depending on the design, it becomes more compact when you scroll down. Without having to scroll back to the top, it allows the user to navigate quickly to other pages.</p>
+            <p>As you scroll down. Navbar will remain on screen.
+The sticky header remains on the screen. Depending on the design, it becomes more compact when you scroll down. Without having to scroll back to the top, it allows the user to navigate quickly to other pages.</p>
+            <p>As you scroll down. Navbar will remain on screen.
+The sticky header remains on the screen. Depending on the design, it becomes more compact when you scroll down. Without having to scroll back to the top, it allows the user to navigate quickly to other pages.</p>
+            <p>As you scroll down. Navbar will remain on screen.
+The sticky header remains on the screen. Depending on the design, it becomes more compact when you scroll down. Without having to scroll back to the top, it allows the user to navigate quickly to other pages.</p>
+            <p>As you scroll down. Navbar will remain on screen.
+The sticky header remains on the screen. Depending on the design, it becomes more compact when you scroll down. Without having to scroll back to the top, it allows the user to navigate quickly to other pages.</p>
+            <p>As you scroll down. Navbar will remain on screen.
+The sticky header remains on the screen. Depending on the design, it becomes more compact when you scroll down. Without having to scroll back to the top, it allows the user to navigate quickly to other pages.</p>
+            <p>As you scroll down. Navbar will remain on screen.
+The sticky header remains on the screen. Depending on the design, it becomes more compact when you scroll down. Without having to scroll back to the top, it allows the user to navigate quickly to other pages.</p>
+            <p>As you scroll down. Navbar will remain on screen.
+The sticky header remains on the screen. Depending on the design, it becomes more compact when you scroll down. Without having to scroll back to the top, it allows the user to navigate quickly to other pages.</p>
+            <p>As you scroll down. Navbar will remain on screen.
+The sticky header remains on the screen. Depending on the design, it becomes more compact when you scroll down. Without having to scroll back to the top, it allows the user to navigate quickly to other pages.</p>
+            <p>As you scroll down. Navbar will remain on screen.
+The sticky header remains on the screen. Depending on the design, it becomes more compact when you scroll down. Without having to scroll back to the top, it allows the user to navigate quickly to other pages.</p>
+            <p>As you scroll down. Navbar will remain on screen.
+The sticky header remains on the screen. Depending on the design, it becomes more compact when you scroll down. Without having to scroll back to the top, it allows the user to navigate quickly to other pages.</p>
+            <p>As you scroll down. Navbar will remain on screen.
+The sticky header remains on the screen. Depending on the design, it becomes more compact when you scroll down. Without having to scroll back to the top, it allows the user to navigate quickly to other pages.</p>
+        </div>
+
+        <script>
+            window.onscroll = function() {myFunction()};
+            let header = document.getElementById("navbar");
+            let sticky = header.offsetTop;
+
+            const myFunction = () => {
+                if (window.pageYOffset > sticky) {
+                    header.classList.add("sticky");
+                } else {
+                    header.classList.remove("sticky");
+                }
+            }
+        </script>
+    </body>
+</html>
