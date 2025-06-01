@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/c8f4b5618f.js" crossorigin="anonymous"></script>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            .container {
+                position: fixed;
+                width: 50%;
+                height: 50%;
+                background-color: #acdddf;
+                margin-left: 25%;
+                margin-top: 15%;
+                border-radius: 1rem;
+            }
+
+            .title {
+                width: 100%;
+                text-align: center;
+                margin-top: 15%;
+                font-family: 'poppins', sans-serif;
+            }
+
+            .border {
+                height: 1px;
+                width: 16%;
+                background-color: #ccc;
+                margin-left: 42%;
+                margin-top: 5px;
+            }
+
+            .box {
+                display: flex;
+                align-items: center;
+                position: absolute;
+                top: 60%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: #333333;
+                height: 3rem;
+                border-radius: 3rem;
+            }
+
+            .search {
+                background: none;
+                outline: none;
+                float: left;
+                padding: 0;
+                border: none;
+                border-radius: 3rem;
+                color: white;
+                font-size: 18px;
+                transition: 1s;
+                width: 0px;
+            }
+
+            .button {
+                border: none;
+                background-color: #333333;
+                font-size: 18px;
+                float: right;
+                color: #4cbb17;
+                cursor: pointer;
+                border-radius: 3rem;
+                height: 3rem;
+                width: 3rem;
+            }
+
+            .box:hover> .search {
+                width: 300px;
+                padding-left: 20px;
+            }
+
+            .box:hover> .button {
+                background-color: white;
+                height: 2.2rem;
+                width: 2.2rem;
+                margin-right: 6px;
+            }
+
+            .search:focus {
+                width: 300px;
+                padding-left: 20px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="title">
+                <h1>Search Bar</h1>
+                <p>HTML & CSS</p>
+                <div class="border"></div>
+            </div>
+
+            <div class="box">
+                <input class="search" placeholder="Search...">
+                <button class="button" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+    </body>
+</html>
