@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: 'poppins', sans-serif;
+                box-sizing: border-box;
+            }
+
+            .header {
+                height: 5rem;
+                margin: 0px 200px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            span h2 {
+                color: #286d34;
+                cursor: pointer;
+            }
+
+            ul {
+                display: flex;
+                list-style: none;
+            }
+
+            ul li a {
+                text-decoration: none;
+                color: #333;
+                margin-left: 30px;
+            }
+
+            ul li a:hover {
+                color: #286d34;
+            }
+
+            .container {
+                margin: 20px 200px;
+                display: flex;
+            }
+
+            .right-box {
+                width: 50%;
+                border: 1px solid #286d34;
+                border-radius: 10px;
+            }
+
+            .main-image-box {
+                padding: 30px 0px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .main-image {
+                height: 390px;
+                width: auto;
+            }
+
+            .small-images {
+               display: flex;
+               justify-content: space-between;
+               padding: 8px;
+               align-items: center; 
+            }
+
+            .image-box {
+                margin: 0px 8px 8px 0px;
+                height: 100px;
+                width: auto;
+                cursor: pointer;
+                border: 1px solid #286d34;
+                border-radius: 5px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .image {
+                height: 90%;
+                width: auto;
+            }
+
+            .details-box {
+                width: 50%;
+                padding-left: 50px;
+            }
+
+            .details-box h2 {
+                color: #286d34;
+            }
+
+            .inputs {
+                width: 100%;
+                justify-content: space-between;
+            }
+
+            td input {
+                height: 30px;
+            }
+
+            button {
+                border: none;
+                border-radius: 5px;
+                padding: 10px 15px;
+                background-color: #286d34;
+                color: white;
+                margin-top: 14px;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background-color: darkgreen;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="header">
+            <span><h2>E COMMERCE</h2></span>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <div class="right-box">
+                <div class="main-image-box">
+                    <img src="./resources/images/main.jpg" id="mainImage" class="main-image">
+                </div>
+
+                <div class="small-images">
+                    <div class="image-box"><img src="./resources/images/main.jpg" class="image"></div>
+                    <div class="image-box"><img src="./resources/images/small_1.jpg" class="image"></div>
+                    <div class="image-box"><img src="./resources/images/small_2.jpg" class="image"></div>
+                    <div class="image-box"><img src="./resources/images/small_3.jpg" class="image"></div>
+                </div>
+            </div>
+
+            <div class="details-box">
+                <h1>Lenovo Thinkpad T14 (Gen 1) 14" Laptop, i5 10310U 1.7Ghz, 16GB DDR4, 512GB NVMe SSD, 1080p Full HD, Thunderbolt 3, HDMI, Webcam, Windows 11 Pro (Renewed)</h1>
+                <p>Availability (In Stock)</p>
+                <h2>$ 1200.99</h2>
+                <table cellspacing="0" class="inputs">
+                    <tr>
+                        <td>Quantity</td>
+                        <td align="right"><input type="number" id="first"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Sub Total</td>
+                        <td align="right"><input type="number" id="second"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Sales Tax 5.7%</td>
+                        <td align="right"><input type="number" id="third"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Total</td>
+                        <td align="right"><input type="number" id="fourth"></td>
+                    </tr>
+                </table>
+
+                <h4>Specifications</h4>
+                <p>Fresh install and activated Windows 11 with zero bloatware. Windows 11 will be activated via your unit's unique digital license and ready to go right out of the box. Intel Quad Core i5 10th Generation 10310U (1.70 GHz) 16 GB DDR4 RAM | 512GB NVMe SSD 14" 1080p Full HD screen | USB-C Thunderbolt 3 Port</p>
+                <button>Add To Cart</button>
+            </div>
+        </div>
+
+        <script>
+            let mainImage = document.getElementById("mainImage");
+            let smallImage = document.getElementsByClassName("image");
+
+            smallImage[0].onclick = () => {
+                mainImage.src = smallImage[0].src;
+            }
+            smallImage[1].onclick = () => {
+                mainImage.src = smallImage[1].src;
+            }
+            smallImage[2].onclick = () => {
+                mainImage.src = smallImage[2].src;
+            }
+            smallImage[3].onclick = () => {
+                mainImage.src = smallImage[3].src;
+            }
+
+            const cart = () => {
+                let a,b,c,d;
+                a=document.getElementById("first").value;
+                b=a*1200.99;
+                document.getElementById("second").value=b;
+                c=(b*5.7)/100;
+                document.getElementById("third").value=c.toFixed(2);
+                d=b+c;
+                document.getElementById("fourth").value=d.toFixed(2);
+            }
+
+            let ans= document.getElementById("first");
+                ans.addEventListener("keyup", cart);
+        </script>
+    </body>
+
+</html>
