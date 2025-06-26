@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+
+        <style>
+
+            body {
+                padding: 0;
+                margin: 0;
+                height: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-sizing: border-box;
+                background-color: azure;
+                padding-top: 10px;
+            }
+
+            .container {
+                width: 300px;
+                height: 300px;
+                border-radius: 10px;
+                box-shadow: 0px 0px 10px red;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .description-btn {
+                width: 200px;
+                position: relative;
+                display: inline-block;
+                border-radius: 30px;
+                background-color: white;
+                color: red;
+                text-align: center;
+                padding: 11px 40px 11px 0px;
+                box-shadow: 0px 0px 7px rgba(128, 128, 128, 0.2);
+                transition: all 0.3s;
+            }
+
+            .btn-icon {
+                background-color: red;
+                width: 92px;
+                height: 44px;
+                float: right;
+                position: absolute;
+                border-radius: 30px 30px 30px 0px;
+                right: 0;
+                top: 0;
+                transition: all 0.3s;
+            }
+
+            .name-desription, a {
+                position: relative;
+                z-index: 9999;
+                text-decoration: none;
+                font-size: 18px;
+                font-family: 'poppins', sans-serif;
+            }
+
+            .btn-icon::after {
+                content: "";
+                width: 0;
+                height: 0;
+                border-top: 44px solid white;
+                border-right: 40px solid transparent;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+            }
+
+            .description-btn:hover .btn-icon {
+                width: 100%;
+                border-radius: 30px;
+            }
+
+            .description-btn:hover .btn-icon::after {
+                display: none;
+                opacity: 0.1;
+            }
+
+            .btn-icon i {
+                position: absolute;
+                right: 25px;
+                top: 15px;
+                color: #fff;
+            }
+
+            .description-btn:hover {
+                color: #fff;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div class="container">
+            <a class="description-btn" href="#"><span class="name-description">ez learn axis</span> 
+                <div class="btn-icon">
+                    <i class="far fa-lightbulb"></i>
+                </div>
+            </a>
+        </div>
+
+    </body>
+
+</html>
